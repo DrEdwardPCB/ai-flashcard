@@ -19,6 +19,8 @@ follow the demo and create a ai interfacing frontend application for generate fl
 
 # demo
 
+[https://vocal-blancmange-1a64dd.netlify.app/]()
+
 # project features
 
 -   uses plenty of hooks

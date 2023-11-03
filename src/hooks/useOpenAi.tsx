@@ -18,13 +18,14 @@ export const useOpenAi = () => {
 				messages: [
 					{
 						role: "user",
-						content: `Can you please generate 10 Question and Answer Object in the form of JSON Array related to ${prompt}`,
+						content: `Can you please generate 10 Question and Answer Object in the form of JSON Array related to ${prompt} and wrap the code in md json code block?`,
 					},
 				],
 				model: "gpt-3.5-turbo",
 			});
 			setLoading(false);
-			console.log(chatCompletion.choices);
+			console.debug(chatCompletion.choices);
+
 			setResult(
 				chatCompletion.choices[0].message.content ?? "```json [] ```"
 			);
